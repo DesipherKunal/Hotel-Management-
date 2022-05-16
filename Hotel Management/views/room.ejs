@@ -1,0 +1,45 @@
+<%- include('partials/header') -%>
+
+<div class="container-fluid">
+  <div class="information">
+    <table class="table">
+        <thead>
+          <tr>
+            
+            <th scope="col">Room_ID</th>
+            <th scope="col">Room_Type</th>
+            <th scope="col">No_of_Bad</th>
+            <th scope="col">Prices</th>
+            <th scope="col">Room_Available</th>
+            <th scope="col">Book</th>
+    
+          </tr>
+        </thead>
+        <tbody>
+            <tr scope="col">#
+                <% for(let i = 0; i < Room.length; i++) { %>
+                  <tr>
+                    <td><%= Room[i].Room_ID %></td><td><%= Room[i].Room_Type %></td><td><%= Room[i].No_of_Bad %></td><td><%= Room[i].Prices %></td><td><%= Room[i].Room_Available %></td><td>
+                         <% if(Room[i].Room_Available==0) { %>
+                          <form action="/booking/<%= Room[i].Room_ID %>" method="post">
+                            <button type="submit" class="btn btn-primary rounded-button">Book Now</button>
+                          </form>
+                         
+                         <% } %>
+                         <% if(Room[i].Room_Available==1) { %>
+                          <button type="button" class="btn btn-danger rounded-button disabled">Booked</button>
+                         <% } %>
+                    </td>
+                  </tr>
+                <% } %>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+</div>
+
+
+
+<%- include('partials/footer') -%>  

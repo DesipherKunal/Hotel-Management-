@@ -1,0 +1,372 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap'); */
+
+* {
+  font-family: "Montserrat";
+  box-sizing: border-box;
+}
+
+/* html {
+  font-family: 'Noto Sans JP', sans-serif;
+} */
+
+
+
+
+body {
+  font-family: "Montserrat";
+  /* text-align: center; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat-Bold" !important;
+}
+
+
+
+/* Section */
+
+.white-section {
+  color: #000 !important;
+}
+
+.colored-section {
+  background-color: #faf1ed !important;
+}
+
+
+
+
+
+
+/* Container  */
+
+.container-fluid{
+  padding: 7% 10%;
+}
+
+
+
+/* Heading */
+
+.big-heading {
+  /* font-family: "Montserrat-Black"; */
+  font-size: 5rem !important;
+  font-weight: bolder;
+  line-height: 1.5 !important;
+  text-align: left;
+}
+
+
+
+
+.brand_des{
+  color: black !important;
+  font-weight: 900;
+  margin-top: -500px;
+  margin-left: 150px;
+  font-size: 7rem;
+}
+
+
+
+
+
+/* Navbar */
+
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  z-index: 5;
+}
+
+
+.navbar-brand {
+  padding: 0.2% 1%;
+  background-color: #c2f5f5 !important; 
+  font-size: 2rem !important;
+  font-weight: 900 !important;
+  border-radius: 10px;
+}
+
+.nav-link {
+  font-size: 1.3rem !important;
+  
+}
+
+.nav-link:hover {
+  color: yellowgreen !important;
+}
+
+.nav-item {
+  margin-right: 1rem;
+}
+
+.dropdown-item {
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.form-label {
+  font-weight: 500;
+}
+
+.form-check-label {
+  font-weight: 500;
+}
+
+
+.form-signin {
+  /* background-color: rgb(253, 249, 198); */
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  margin: 100px auto auto auto;
+  /* backdrop-filter: blur(5px); */
+  border: 1px solid #000;
+  border-radius: 30px;
+  z-index: 5;
+}
+
+
+.form-label {
+  color: #000;
+}
+
+.rounded-button {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  border-radius: 20px !important;
+}
+
+
+.container {
+  margin: 400px auto auto 170px;
+}
+
+
+
+
+
+
+
+
+/* Title */
+
+#title {
+  text-align: center;
+}
+
+
+#title .container-fluid{
+  padding: 10% 10%;
+}
+
+
+.title-items {
+  text-align: left;
+}
+
+
+.title-image {
+  width: 110%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+
+.booking-button {
+  margin-top: 50px;
+  background-color: white;
+  /* background-color: rgb(255, 255, 55); */
+  border-radius: 50px;
+  box-shadow: 1px 1px black;
+}
+
+
+.booking-button:hover {
+  background-color: yellowgreen;
+}
+
+
+
+
+
+
+/* Features */
+
+
+#features {
+  position: relative;
+  text-align: center;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+}
+
+.feature-box {
+  padding: 4.5%;
+}
+
+.icon {
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #ff4c68;
+}
+
+
+
+
+
+
+/* Testimonials */
+
+#testimonials {
+  color: white;
+  text-align: center;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.carousel-item {
+  height: 500px;
+}
+
+
+
+
+.carousel-1 {
+  background-image: url("https://media.istockphoto.com/photos/clean-towels-on-bed-at-hotel-room-picture-id905186016?b=1&k=20&m=905186016&s=170667a&w=0&h=dvWiVvUVHh8jzfnzJs8lG366rhaqKk4YhGLanaCeBII=");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 70% 100%;
+}
+
+
+.carousel-2 {
+  background-image: url("https://media.istockphoto.com/photos/entering-hotel-room-picture-id512882668?b=1&k=20&m=512882668&s=170667a&w=0&h=kNT_80jpErymHZCCCRMVbRJSR8wMOy8UQ-WAbi6EsLY=");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 70% 100%;
+}
+
+.carousel-3 {
+  background-image: url("https://media.istockphoto.com/photos/folded-white-bathrobe-on-top-of-a-hotel-bed-picture-id121370022?k=20&m=121370022&s=612x612&w=0&h=b6MlaZyywr6bE8DKcYQZJ1DqK3EdyRs9J5xKWhg_lKQ=");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 70% 100%;
+}
+
+
+
+
+/* FeedBack */
+
+
+#feedback {
+  text-align: center;
+}
+
+
+
+
+
+
+
+/* Confirm */
+
+
+.confirm-box {
+  text-align: center;
+}
+
+.confirm-icon {
+  margin: auto;
+  width: 50%;
+  color: green;
+}
+
+
+
+/* Inventory */
+
+.Item-box {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.Item-box img{
+  width: 70%;
+  height: 70%;
+  /* border: 3px solid black; */
+  border-radius: 20px;
+}
+
+
+
+/* Footer */
+
+
+.footer {
+  /* position: absolute; */
+  padding-top: 6px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+}
+
+
+.footer-p {
+   margin-top: 20px;
+   font-weight: bolder;
+   font-size: 1.5rem;
+}
+
+
+
+
+
+@media (max-width: 1028px) {
+
+  #title {
+    text-align: center;
+  }
+
+}

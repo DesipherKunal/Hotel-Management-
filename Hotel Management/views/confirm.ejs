@@ -1,0 +1,25 @@
+<%- include('partials/header') -%>
+
+
+<div class="container-fluid">
+
+    <% if(Room_ID != -1) { %>
+        <div class="form-signin confirm-box">
+            <i class="confirm-icon fa-solid fa-circle-check fa-4x"></i>
+            <hr>
+            <h1> You have Booked the Room with Room ID : <%= Room_ID %> and it's <%= type %> Room. </h1>
+        </div>
+    <% }else { %>
+        <div class="form-signin confirm-box">
+            <i class="confirm-icon fa-solid fa-circle-check fa-4x"></i>
+            <hr>
+            <h1>Hey <%= Name %>, You have paid ₹ <%= Price %> for <%= Item_Name %>.</h1>
+        </div>
+    <% } %>
+    
+</div>
+
+
+
+
+<%- include('partials/footer') -%>

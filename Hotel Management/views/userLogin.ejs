@@ -1,0 +1,28 @@
+<%- include('partials/header') -%>
+
+<div class="container-fluid">
+    <main class="form-signin">
+    
+      <form class="" action="/userLoggedIn" method="post">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Customer Username</label>
+          <input type="text" class="form-control" name="UserName" placeholder="Enter your Username" required>
+    
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label"> Password </label>
+          <input type="password" class="form-control" name="Password_" placeholder="Enter your Password" required>
+          <div class="form-text"> We'll never share your Password with anyone else. </div>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" required>
+          <label class="form-check-label" for="checkbox"> "Agree to *Terms and conditions" </label>
+        </div>
+        <button type="submit" class="btn btn-primary rounded-button" name="Login">Login</button>
+      </form>
+    
+    </main>
+    
+    </div>
+
+<%- include('partials/footer') -%>

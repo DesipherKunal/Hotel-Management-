@@ -1,0 +1,71 @@
+<%- include('partials/header') -%>
+
+
+<div class="container-fluid">
+
+    
+        <div class="row">
+            <div class="col-4 Item-box">
+                <img src="/img/Tea.jpg" alt=""> 
+                <form action="/item/<%= Item[0].Item_ID %>" method="post">
+                    <input class="visually-hidden" type="text" name="customerId" value="<%= C_ID %>">
+                    <button type="submit" class="btn btn-dark d-block mx-auto mt-3"><%= Item[0].Item_Name %>  ₹ <%= Item[0].Price %> </button>
+                </form>
+            </div>
+            
+            <div class="col-4 Item-box">
+                <img src="/img/Biriyani.jpg" alt="">
+                <form action="/item/<%= Item[1].Item_ID %>" method="post">
+                    <input class="visually-hidden" type="text" name="customerId" value="<%= C_ID %>">
+                    <button type="submit" class="btn btn-dark d-block mx-auto mt-3"><%= Item[1].Item_Name %>  ₹ <%= Item[1].Price %> </button>
+                </form>
+            </div>
+    
+            <div class="col-4 Item-box">
+                <img src="/img/smoked.jpg" alt="">
+                <form action="/item/<%= Item[2].Item_ID %>" method="post">
+                    <input class="visually-hidden" type="text" name="customerId" value="<%= C_ID %>">
+                    <button type="submit" class="btn btn-dark d-block mx-auto mt-3"><%= Item[2].Item_Name %>  ₹ <%= Item[2].Price %> </button>
+                </form>
+            </div>
+        </div>
+
+        <br>
+        <br>
+   
+        <div class="row">
+            <div class="col-4 Item-box">
+                <img src="/img/Taco.jpg" alt="">
+                <form action="/item/<%= Item[3].Item_ID %>" method="post">
+                    <input class="visually-hidden" type="text" name="customerId" value="<%= C_ID %>">
+                    <button type="submit" class="btn btn-dark d-block mx-auto mt-3"><%= Item[3].Item_Name %>  ₹ <%= Item[3].Price %> </button>
+                </form>
+            </div>
+    
+            <div class="col-4 Item-box">
+                <img src="/img/Pasta.jpg" alt="">
+                <form action="/item/<%= Item[4].Item_ID %>" method="post">
+                    <input class="visually-hidden" type="text" name="customerId" value="<%= C_ID %>">
+                    <button type="submit" class="btn btn-dark d-block mx-auto mt-3"><%= Item[4].Item_Name %>  ₹ <%= Item[4].Price %> </button>
+                </form>
+            </div>
+    
+            <div class="col-4 Item-box">
+                <img src="/img/Pizza.jpg" alt="">
+                <form action="/item/<%= Item[5].Item_ID %>" method="post">
+                    <input class="visually-hidden" type="text" name="customerId" value="<%= C_ID %>">
+                    <button type="submit" class="btn btn-dark d-block mx-auto mt-3"><%= Item[5].Item_Name %>  ₹ <%= Item[5].Price %> </button>
+                </form>
+            </div>
+        </div>
+
+
+    
+
+
+
+</div>
+
+
+
+<%- include('partials/footer') -%>

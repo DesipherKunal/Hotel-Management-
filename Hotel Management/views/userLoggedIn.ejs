@@ -1,0 +1,28 @@
+<%- include('partials/header') -%>
+
+
+<br>
+
+<div class="container-fluid">
+    <h1>Name : <%= customerData.Name %></h1>
+    <br>
+    <h2>Email : <%= customerData.Email %></h2>
+    <h2>Mobile Number :     <%= customerData.Mobile_Number %></h2>
+    <h2>Address :  <%= customerData.Address %></h2>
+    <br>
+    <br>
+    <form action="/inventory" method="post">
+        <input class="visually-hidden" type="text" name="customerId" value="<%= customerData.Customer_ID %>">
+        <button class="btn btn-dark rounded-button">Inventory</button>
+    </form>
+
+    <br>
+
+    <a href="\rooms"><button type="button" class="btn btn-dark rounded-button"><i class="fa-solid fa-hotel"></i></i> Book Now</button></a>
+    
+</div>
+
+
+
+
+<%- include('partials/footer') -%>
